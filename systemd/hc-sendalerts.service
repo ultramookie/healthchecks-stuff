@@ -1,0 +1,12 @@
+[Unit]
+Description=Healthchecks.io Alert Sender
+
+[Service]
+WorkingDirectory=/opt/healthchecks/
+ExecStart=/opt/healthchecks/manage.py sendalerts
+GuessMainPID=no
+User=root
+Group=nogroup
+
+[Install]
+WantedBy=multi-user.target

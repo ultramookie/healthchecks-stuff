@@ -1,0 +1,12 @@
+[Unit]
+Description=Healthchecks.io Server
+
+[Service]
+WorkingDirectory=/opt/healthchecks/
+ExecStart=/opt/healthchecks/manage.py runserver
+GuessMainPID=no
+User=root
+Group=nogroup
+
+[Install]
+WantedBy=multi-user.target
