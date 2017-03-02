@@ -1,0 +1,16 @@
+{
+    "attachments": [
+        {
+            "fallback": "$NAME is $STATUS",
+            "title": "$NAME is $STATUS",
+            "color": "#FFA500",
+            "fields": [
+               {
+                   "title": "Event Time",
+                   "value": "$NOW",
+                   "short": true
+               }
+            ]
+        }
+    ]
+}
